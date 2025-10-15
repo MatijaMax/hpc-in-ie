@@ -240,7 +240,7 @@ results <- resamples(list(LogReg = model_glm, RF = model_rf, KNN = model_knn))
 summary(results)
 p<-bwplot(results, metric = "Accuracy")
 png("images/ACCURACY.png", width = 1200, height = 800)
-print(p)   # must explicitly print trellis object
+print(p)   
 dev.off()
 
 
